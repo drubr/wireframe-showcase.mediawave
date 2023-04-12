@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  .element {
-    @apply bg-gray-200;
+  .interactive {
+    @apply cursor-pointer transition-all hover:scale-105 active:scale-95 ;
   }
 }
 
