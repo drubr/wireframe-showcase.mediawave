@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-  title: "Wireframe Mediawave | Prototype",
+  title: "Wireframe Showcase | Mediawave",
   description: "Prototype basic concepts in wireframe context",
 };
 
