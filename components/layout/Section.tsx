@@ -2,11 +2,16 @@ import React from "react";
 
 interface SectionProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export default function Section({ children }: SectionProps) {
+export default function Section({ children, className }: SectionProps) {
   return (
-    <section className="mx-auto grid w-full max-w-screen-xl gap-8 px-8 xl:px-0">
+    <section
+      className={`mx-auto w-full max-w-screen-xl px-8 xl:px-0 ${
+        className ? className : ""
+      }`}
+    >
       {children}
     </section>
   );

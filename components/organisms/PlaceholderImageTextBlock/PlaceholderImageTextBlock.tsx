@@ -2,16 +2,16 @@ import PlaceholderImage from "@/components/atoms/PlaceholderImage/PlaceholderIma
 import TextBlock from "@/components/molecules/TextBlock/TextBlock";
 
 interface ImageTextBlockProps {
-  showCTA?: boolean;
+  showCallToAction?: boolean;
 }
 
 export default function PlaceholderImageTextBlock({
-  showCTA = true,
+  showCallToAction = true,
 }: ImageTextBlockProps) {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid gap-8 sm:grid-cols-2">
       <PlaceholderImage />
-      <TextBlock showCTA={showCTA} />
+      <TextBlock showCallToAction={showCallToAction} />
     </div>
   );
 }

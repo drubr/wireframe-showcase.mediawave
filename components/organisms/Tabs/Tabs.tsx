@@ -7,7 +7,7 @@ export default function Tabs() {
 
   return (
     <div className="grid gap-4">
-      <ul className="flex items-center gap-4">
+      <ul className="flex items-center gap-4 overflow-x-hidden py-2">
         {Array.from(Array(5).keys()).map((_, index) => (
           <li
             key={index}
