@@ -1,6 +1,4 @@
 "use client";
-/** Next.js 13 component are Server Components by default. When interactivity is needed, mark this file as Client Component with "use client" */
-/** More on Server Components: https://nextjs.org/docs/advanced-features/react-18/server-components */
 
 import React from "react";
 

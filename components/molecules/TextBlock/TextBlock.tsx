@@ -2,10 +2,14 @@
 import Button from "@/components/atoms/Button/Button";
 
 interface TextBlockProps {
-  showCTA?: boolean;
+  showCallToAction?: boolean;
+  callToActionLink?: string;
 }
 
-export default function TextBlock({ showCTA = false }: TextBlockProps) {
+export default function TextBlock({
+  showCallToAction = false,
+  callToActionLink = "/",
+}: TextBlockProps) {
   return (
     <div className="grid gap-8">
       <div className="grid gap-4">
@@ -14,7 +18,7 @@ export default function TextBlock({ showCTA = false }: TextBlockProps) {
       </div>
       <div className="h-44 w-full rounded-3xl bg-gray-200"></div>
 
-      {showCTA && (
+      {showCallToAction && (
         <div className="flex justify-end">
           <Button />
         </div>

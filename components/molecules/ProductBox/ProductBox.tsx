@@ -2,7 +2,7 @@ import Button from "@/components/atoms/Button/Button";
 
 export default function ProductBox() {
   return (
-    <div className="group relative grid max-w-xs cursor-pointer gap-4">
+    <div className="group relative grid w-full max-w-[26.875rem] cursor-pointer gap-4">
       <div className="h-80 rounded-3xl bg-gray-200 transition group-hover:bg-gray-300"></div>
 
       <div className="grid gap-4">
