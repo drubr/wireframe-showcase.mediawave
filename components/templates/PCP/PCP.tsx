@@ -2,6 +2,7 @@ import Section from "@/components/layout/Section";
 import ProductCard from "@/components/molecules/ProductCard/ProductCard";
 import TextBlock from "@/components/molecules/TextBlock/TextBlock";
 import PlaceholderImageTextBlock from "@/components/organisms/PlaceholderImageTextBlock/PlaceholderImageTextBlock";
+import ProductListing from "@/components/organisms/ProductListing/ProductListing";
 
 export default function PCP() {
   return (
@@ -16,13 +17,7 @@ export default function PCP() {
       </section>
 
       <Section>
-        <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          {[...Array(9).keys()].map((_, index) => (
-            <li key={index}>
-              <ProductCard variant="Quarter Cover on Hover" />
-            </li>
-          ))}
-        </ul>
+        <ProductListing />
       </Section>
 
       <Section>
